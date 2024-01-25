@@ -1,0 +1,30 @@
+body {
+    width: 700px;
+    margin: 15px auto;
+    padding: 5px 15px;
+    background-color: #e4e978;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.text-dark-green {
+    color: #4c7658;
+}
+
+.italic {
+    font-style: italic;
+}
+
+.border-color {
+    border: 1px solid #b2ad7d;
+}
+
+
+article {
+    background-color: #f2f4c0;
+    margin-bottom: 10px;
+    padding: 10px;
+}
+
+section {
+    background-color: #e4e978;
+}
