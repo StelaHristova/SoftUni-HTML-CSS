@@ -1,0 +1,61 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Roboto:ital,wght@0,100;0,400;0,500;0,700;0,900;1,100;1,400;1,500;1,700;1,900&display=swap');
+
+html {
+   font: 12px/1.5 'Roboto', Arial, Helvetica, sans-serif;
+}
+
+body {
+    font: inherit;
+}
+
+h2,
+.site-footer h3 {
+    line-height: 1.1em;
+    margin: 0.3em 0 0..5em 0;
+    font-weight: normal;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+h1 { font-size: 2.40rem; }
+
+h2 { font-size: 2.00rem; }
+
+h3 { font-size: 1.70rem; }
+
+h4 { font-size: 1.50rem; }
+
+h5 { font-size: 1.30rem; }
+
+h6 { font-size: 1.15rem; }
+
+.header-title {
+    font-size: 3em;
+    color: purple;
+}
+
+.site-header span p:nth-child(2) {
+    font-size: 0.85em;
+    text-transform: uppercase;
+}
+
+.first-title,
+.second-title,
+.newsletter-title {
+    font-size: 2.5em;
+}
+
+.text p {
+    font-size: 1.3em;
+}
+
+@media (min-width: 600px) {
+    html {font-size: 14px; }
+    }
+
+@media (min-width: 1000px) {
+    html {font-size: 16px; }
+    }
+
+@media (min-width: 1600px) {
+    html {font-size: 18px; }
+    }

@@ -1,0 +1,46 @@
+.footer-container {
+    max-width: 80vw;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    gap: 2em;
+    margin: 0 auto;
+}
+
+.footer-content {
+    flex: 0 0 32%;
+    padding: 2em;
+}
+
+.site-footer h2,
+.site-footer h3 {
+    padding-bottom: 0.5em;
+}
+
+.footer-site-map {
+    flex: 0 0 32%;
+}
+
+.footer-site-map-content ul,
+.contacts ul {
+    list-style-type: none;
+}
+
+.footer-site-map-content a {
+    text-decoration: none;
+    color: black;
+}
+
+.footer-site-map-content a:hover {
+    color: grey;
+}
+
+.footer-site-map-content {
+    display: flex;
+    gap: 3em;
+}
+
+.contacts {
+    flex: 1 0 auto;
+}
