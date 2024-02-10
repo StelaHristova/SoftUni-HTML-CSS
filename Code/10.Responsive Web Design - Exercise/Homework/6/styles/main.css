@@ -1,0 +1,67 @@
+body {
+    color: black;
+    background-color: rgb(238, 238, 238);
+}
+
+.site {
+    padding: 1.5em;
+}
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+thead {
+    color: rgb(238, 238, 238);
+    background-color: #091123;
+}
+
+.mobile-headers {
+    display: none;
+}
+
+th, td {
+    text-align: left;
+    border: 1px solid #B6B6B6;
+    padding: 8px;
+    font-weight: bold;
+}
+
+table tr:nth-child(2) {
+    background-color: white;
+}
+
+@media (max-width: 400px) {
+    html {
+        font-size: 14px;
+    }
+
+    thead {
+        background-color: #B6B6B6; 
+        display: none;    
+    }
+    
+    .mobile-headers {
+        display: inline-block;
+        font-weight: bold;
+        margin-right: 16px;
+    }
+
+    tr {
+        display: flex;
+        flex-direction: column;  
+    }
+
+    th, td {
+        text-align: left;
+        border: 1px solid #B6B6B6;
+        
+        padding: 8px;
+        font-weight: normal;
+    }
+    
+    table tr:nth-child(2) {
+        background-color: white;
+    }
+}

@@ -1,0 +1,93 @@
+@import url('https://fonts.googleapis.com/css2?family=Protest+Riot&display=swap');
+
+*,
+*::after,
+*::before {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font: 12px/1.5 'Protest Riot', Arial, Helvetica, sans-serif;
+    background-color: white;
+}
+
+body {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.site-header {
+    background-color: lightskyblue;
+    text-align: center;
+}
+
+.site-header h5 {
+    border-top: 2px solid black;
+    border-bottom: 2px solid black;
+    margin: 0 1em;
+    font-size: 1.5em;
+}
+
+.site-main {
+    padding: 2em 1em;
+    display: flex;
+    flex: 1 1 auto;
+    gap: 2em;
+    align-items: center;
+}
+
+.site-main p {
+    text-indent: 2em;
+    font-size: 1.2em;
+}
+
+.site-main p:first-child {
+    padding-bottom: 2em;
+}
+
+.left-container {
+    border: 2px solid black;
+    padding: 0.5em;
+    flex: 1;
+}
+
+.left-container p {
+    font-size: 0.8em;
+    padding-top: 1em;
+}
+
+.left-container img {
+    width: 100%;
+    height: auto;
+}
+
+.right-container {
+    flex: 2;
+}
+
+.site-footer {
+    margin-top: auto;
+    display: flex;
+    flex-direction: column;
+}
+
+.site-footer h2 {
+    color: white;
+    background-color: black;
+    display: inline-block;
+    padding: 0.3em 2em 0;
+}
+
+.facts {
+    background-color: lightskyblue;
+    display: inline-block;
+    padding: 1em 2em;
+    list-style-type: none;
+}
+
+.facts li:not(:last-child) {
+    padding-bottom: 0.5em;
+}
