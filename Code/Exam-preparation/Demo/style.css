@@ -1,0 +1,20 @@
+body {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+}
+
+header, footer {
+    background-color: black;
+    color: white;
+    padding: 2em;
+}
+
+footer {
+    margin-top: auto;
+}
+
+.container {
+    width: 60em;
+    margin: 0 auto;
+}
