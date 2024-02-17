@@ -1,0 +1,275 @@
+@import url(https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css);
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+
+:root {
+    --gray-light: #EFEFEF;
+    --gray-dark: #909090;
+    --gray-black: #222222;
+}
+
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Global styles */
+
+body {
+    font-family: 'Raleway', sans-serif;
+    color: var(--gray-black);
+    font-size: 16px;
+}
+
+img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+.page-section {
+    max-width: 1504px;
+    max-height: 645px;
+    margin: 1.5em auto;
+    background-color: var(--gray-light);
+    height: calc(100vh - 1.5em);
+    padding: 3em 5em;
+    overflow: hidden;
+    line-height: 1.7em;
+}
+
+.section-flexed {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+
+.section-flexed .section-info {
+    flex: 0 0 50%;
+}
+
+.section-flexed .section-img {
+    flex: 0 1 35%;
+}
+
+.page-section .title {
+    font-size: 40px;
+    font-weight: normal;
+    margin-bottom: 2.5rem;
+}
+
+.page-section .desc {
+    font-style: italic;
+    margin-bottom: 2.5em;
+}
+
+.page-section .divider.vertical {
+    height: 3em;
+    width: 1px;
+    background-color: var(--gray-black);
+}
+
+
+/* Hero*/
+#hero.page-section {
+    position: relative;
+}
+
+#hero .navigation {
+    position: absolute;
+    top: 1.5em;
+    right: 1.5em;
+}
+
+#hero .hero-img {
+    position: absolute;
+    width: 50%;
+    height: auto;
+    bottom: 0px;
+    right: 5em;
+}
+
+
+/* Camera */
+#camera .socials {
+    display: flex;
+    align-items: center;
+    gap: 2em;
+}
+
+#camera .socials .social {
+    width: 3em;
+    height: 3em;
+    background-color: var(--gray-dark);
+    color: white;
+    list-style-type: none;
+    position: relative;
+}
+
+#camera .socials .social i {
+    font-size: 2em;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+#camera .divider.horizontal {
+    height: 1px;
+    width: 70px;
+    background-color: var(--gray-black);
+    margin-bottom: 1em;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+#camera .title {
+    display: inline;
+    margin-left: 1em;
+}
+
+#camera p:not(:first-child) {
+    margin-top: 2em;
+}
+
+
+
+/* Woman */
+#woman {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+}
+
+#woman .woman-img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* Road */
+
+#road {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#road .section-info {
+    max-width: 430px;
+    margin-left: 50px;
+    
+    
+}
+
+#road .section-img {
+    max-width: 700px;
+    height: auto;
+    margin-right: 50px;
+}
+
+
+/* Gallery */
+
+#gallery {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+#gallery .list {
+    list-style-type: none;
+    flex: 1 0 30%;
+    display: flex;
+    align-items: center;
+    gap: 2em;
+}
+
+/*#gallery .list .picture {
+    transform: scale(1);
+    transition: transform 300ms ease-in-out;
+}*/
+
+#gallery .list .picture:hover {
+    transform: scale(1.5);
+    /*z-index: 1;*/
+}
+
+/* Contacts */
+
+#contacts {
+    position: relative; 
+    padding: 85px;
+}
+ 
+#contacts .form {
+    max-width: 650px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;  
+     
+}
+
+#contacts .form .input-row {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+#contacts .form .email,
+#contacts .form .subject {
+    width: calc(50% - 10px);
+    margin-bottom: 20px;
+}
+
+#contacts .form .email{
+    margin-right: 20px;
+}
+
+#contacts .form input,
+#contacts .form textarea {
+    background: transparent;
+    border: 1px solid var(--gray-black);
+    padding: 0.25em;
+}
+
+#contacts .form textarea {
+    resize: none;
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+#contacts .form .btn {
+    width: 100%;
+    padding: 0.5em;
+    text-align: center;
+    border: none;
+    background: var(--gray-black);
+    color: white;
+}
+
+.page-section:last-child {
+    text-align: center;
+}
+
+.page-section p {
+    max-width: 1000px;
+    margin: 0 auto;
+    
+}
+
+.site-footer {
+    text-align: center;
+    padding: 1em 0;
+    margin-top: 150px;
+ 
+}
+
