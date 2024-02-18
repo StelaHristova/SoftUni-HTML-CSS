@@ -1,0 +1,85 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&amp;display=swap');
+
+:root {
+    --light-blue: #85DCFF;
+    --green: #42AA59;
+}
+
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font: 14px/1.5 'Inter', sans-serif;
+    color: black;
+}
+
+body {
+    padding: 2em;
+}
+
+img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+article {
+    display: flex;
+    gap: 6.8em;
+    max-width: 1060px;
+    margin: 0 auto;
+    padding: 8.2em;
+    background-color: var(--light-blue);
+    justify-content: center;
+    padding-left: 2.28em;
+    padding-right: 2.28em;
+    align-items: center;
+}
+
+article .content {
+    flex: 1 1 auto;
+    padding-top: 1em;
+    justify-content: center;
+}
+
+article .media {
+    flex: 0 0 365px;
+    box-shadow: 0 0 1em 0.5em rgb(0, 0 , 0, 0.4);
+}
+
+article .site-text h1 {
+    font-size: 2.86em;
+    line-height: 1.2em;
+    margin-bottom: 1em;
+}
+
+article .buttons {
+    display: flex;
+    gap: 1em;
+    margin-top: 2em;
+}
+
+article .button {
+    display: block;
+    padding: 15px 30px;
+    border: 1px solid white;
+    border-radius: 3px;
+    color: black;
+    text-decoration: none;
+    background-color: white;
+}
+
+article .button.hover {
+    border: 1px solid black;
+    background-color: var(--green);
+}
+
+article .button.hover:hover {
+    background-color: black;
+    color: white;
+}

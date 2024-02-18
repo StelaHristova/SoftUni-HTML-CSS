@@ -1,0 +1,230 @@
+@import url('https://fonts.googleapis.com/css2?family=Karla&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Infant&display=swap');
+
+:root {
+    --background-white: #F8F0E9;
+    --background-coral: #E14747;
+    --yellow-button: #FAD87A;
+    --footer-black: #352B2A;
+    --footer-text: #76543E;
+    --button-white: #FFFFFF;
+}
+
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font: 18px/1.5 "Karla", sans-serif;
+}
+
+body {
+    background-image: url('images/poster.jpg');
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-position: top center;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: "Cormorant Infant", serif;
+}
+
+.container {
+    max-width: 1920px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.site-section.banner {
+    padding-bottom: 8em;
+}
+
+.site-section.banner .container {
+    color: white;
+}
+
+.site-section.banner h1 {
+    font-size: 90px;
+    font-weight: bold;
+    margin-bottom: 1em;
+}
+
+.site-section {
+    padding: 2em;
+}
+
+.site-header {
+    display: flex;
+    justify-content: space-between;
+    margin-right: 5.5em;
+    margin-left: 5.5em;
+}
+
+.site-header nav ul {
+    display: flex;
+}
+
+.site-header nav li {
+    list-style: none outside;
+    padding: 0 0.5em;
+}
+
+.site-header nav a {
+    text-decoration: none;
+    color: white;
+}
+
+.site-logo a{
+    display: block;
+    background-image: url('images/logo.webp');
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    overflow: hidden;
+    width: 130px;
+    height: 110px;
+    text-indent: -200vw;
+}
+
+.site-section.testimental,
+.site-section.mind {
+    background-color: var(--background-white);
+}
+
+.site-section.support,
+.site-section.guide {
+    background-color: var(--background-coral);
+}
+
+.testimental-container {
+    width: 60em;
+    text-align: left;
+    margin: 0 auto 3em;
+}
+
+.testimental-container h2 {
+    font-style: italic;
+    font-size: 64px;
+    line-height: 0.8em;
+    margin-top: 1em;
+}
+
+.support-container {
+    color: white;
+}
+
+.support-container h3 {
+    font-family: "Karla", sans-serif;
+    padding: 1.5em;
+}
+
+.container.mind {
+    padding: 4.44em 0;
+    width: 630px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.container.mind img {
+    width: 630px;
+    height: auto;
+    padding-bottom: 3.5em;
+}
+
+.container.mind h4 {
+    font-size: 3.8em;
+    line-height: 1em;
+    padding-bottom: 1.3em;
+}
+
+.container.mind p {
+    padding-bottom: 3em;
+    text-align: start;
+}
+
+.button-container {
+    display: flex;
+    flex-direction:  column;  
+    width: 100%; 
+}
+
+.button-container a:first-child {
+    margin-right: auto; 
+    margin-bottom: 4em; 
+}
+
+.button-container a:nth-child(2) {
+    margin: 0 auto;
+}
+
+.button {
+    cursor: pointer;
+    outline: none;
+    text-decoration: none;
+    color: black;
+    background-color: var(--button-white);
+    border: 1px solid black;
+    border-radius: 0.3em;
+    padding: 0.5em 1em;
+    margin: 0;
+}
+
+.site-section.mind a {
+        text-align: left;
+}
+
+.guide-container {
+    color: white;
+    padding-top: 3em;
+    padding-bottom: 2em;
+}
+
+.guide-container h4 {
+    font-size: 3.8em;
+    line-height: 1em;
+    padding-bottom: 1.3em;
+}
+
+.guide-container p {    
+    text-align: center;
+    width: 60em;
+    margin: 0 auto 4em;
+}
+
+.guide-container .button.guide {
+    background-color: var(--yellow-button);
+    border: none;
+    border-radius: 5em;
+    padding: 1em;
+}
+
+.site-footer {
+    background-color: var(--footer-black);
+    padding-left: 8.3em;
+    padding-bottom: 1.5em;
+}
+
+.site-footer .site-logo {
+    padding-top: 2em;
+    padding-bottom: 2em;
+}
+
+.text p:first-child {
+    color: white;
+    padding-bottom: 1em;
+}
+
+.text p:last-child {
+    color: var(--footer-text);
+}
+
+
+
